@@ -1,3 +1,3 @@
 # hglabor-web
 
-API: https://www.mcapi.us/
+API: https://www.mcapi.us/ or https://mc-api.net/
