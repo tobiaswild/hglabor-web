@@ -5,14 +5,10 @@
 
 <script src="https://mcapi.us/scripts/minecraft.min.js"></script>
 <script>
-    MinecraftAPI.getServerStatus('hglabor.de', {
-        port: 25565 // optional, only if you need a custom port
-    }, function (err, status) {
+    MinecraftAPI.getServerStatus('hglabor.de', function (err, status) {
         if (err) {
             return document.querySelector('.server-status').innerHTML = 'Error loading status';
         }
-
-        // you can change these to your own message!
         document.querySelector('.server-online').innerHTML = status.online ? 'up' : 'down';
     });
 </script>
